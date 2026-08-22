@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "id": "bug-report-complete",
+      "prompt": "The checkout page crashes when I click Pay. The steps are: add an item to the cart, go to checkout, and click Pay. I am using Chrome on Windows 11.",
+      "expected": "The assistant should recognize a bug report, create a bug report using the provided description, steps to reproduce, and environment, then confirm successful creation and provide the returned ticket ID."
+    },
+    {
+      "id": "platform-question-covered",
+      "prompt": "How long does delivery take?",
+      "expected": "The assistant should answer only from the FAQ: estimated delivery times are shown at checkout and in the shipping confirmation email, and processing typically takes 1-2 business days before dispatch."
+    },
+    {
+      "id": "platform-question-uncovered",
+      "prompt": "Do you offer gift wrapping?",
+      "expected": "Because gift wrapping is not covered by the FAQ, the assistant should not invent an answer and should refer the customer to the human support line at 1-800-555-0199 (Mon-Fri)."
+    },
+    {
+      "id": "other-request",
+      "prompt": "Can you help me negotiate a business partnership?",
+      "expected": "The assistant should explain that it cannot handle this request and refer the customer only to the human support line at 1-800-555-0199 (Mon-Fri), without inventing other contact information."
+    }
+  ]
+}

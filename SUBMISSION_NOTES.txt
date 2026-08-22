@@ -1,0 +1,34 @@
+Customer Support Chatbot — Submission Notes
+
+This submission uses the updated Amazon Bedrock AgentCore version of the
+Udacity project starter.
+
+The current implementation uses:
+- Amazon Bedrock AgentCore managed harness
+- AgentCore Gateway
+- AWS Lambda create_bug_report tool
+- Amazon DynamoDB
+- Amazon Bedrock Evaluations
+- Amazon Bedrock Guardrails
+
+Some rubric text still uses terminology from the earlier Bedrock Flows
+version of the project. In the current AgentCore starter:
+
+- harness-tests.json is the automated chatbot test suite corresponding to
+  the older rubric reference to flow-tests.json.
+- generate-eval-dataset.py invokes the AgentCore harness and produces the
+  Bedrock Evaluations JSONL dataset.
+- system_prompt.txt implements routing, FAQ grounding, bug-report
+  information collection, and human handoff behavior.
+
+Functional Bedrock Evaluation:
+- 4 test cases
+- Builtin.Correctness: 1.00 for all 4 cases
+
+Additional Guardrail Security Validation:
+- Bedrock Guardrail is applied to user input before AgentCore invocation.
+- Prompt injection was detected as PROMPT_ATTACK with HIGH confidence and
+  blocked before the harness was invoked.
+- Legitimate support traffic continued normally.
+- 2 security evaluation cases
+- Builtin.Correctness: 1.00 for both cases
