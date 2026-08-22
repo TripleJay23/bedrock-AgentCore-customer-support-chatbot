@@ -1,4 +1,4 @@
-﻿# Python
+# Python
 venv/
 .venv/
 __pycache__/
@@ -24,3 +24,6 @@ agentcore_config.json
 # OS Artifacts
 .DS_Store
 Thumbs.db
+
+docs/
+evidence/
