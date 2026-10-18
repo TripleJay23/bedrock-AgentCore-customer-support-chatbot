@@ -25,5 +25,5 @@ agentcore_config.json
 .DS_Store
 Thumbs.db
 
-docs/
+# Evidence directory (not referenced as images in README)
 evidence/

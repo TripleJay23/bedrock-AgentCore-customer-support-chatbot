@@ -1,4 +1,4 @@
-﻿# Bedrock AgentCore Customer Support Chatbot
+# Bedrock AgentCore Customer Support Chatbot
 
 An enterprise-grade, generative-AI customer support chatbot built on AWS with **Amazon Bedrock AgentCore**, **Bedrock AgentCore Gateway**, **AWS Lambda**, **Amazon DynamoDB**, **Amazon Bedrock Guardrails**, and **Amazon Bedrock Flows**. 
 
@@ -250,17 +250,6 @@ bedrock-AgentCore-customer-support-chatbot/
 │       ├── dynamodb-bug-report.png
 │       ├── agentcore-gateway.png
 │       └── bug-report-chat.png
-│
-└── evidence/                       # Complete reviewer evidence artifacts
-    ├── flow-full-diagram.png
-    ├── flow-classifier-config.png
-    ├── flow-condition-expressions.png
-    ├── flow-covered-faq.png
-    ├── flow-faq-prompt-config.png
-    ├── flow-faq-tests.png
-    ├── flow-bug-route.png
-    ├── flow-other-request.png
-    ├── ...
 ```
 
 ---
@@ -385,7 +374,7 @@ Selected key screenshots demonstrating working deployment, routing, and evaluati
 ### 6. DynamoDB Bug Report Ticket Record
 ![DynamoDB Bug Report](docs/images/dynamodb-bug-report.png)
 
-*For the complete set of visual evidence and configuration captures, see the [evidence/](evidence/) directory.*
+*For the primary visual evidence and architecture screenshots, see the [docs/images/](docs/images/) directory.*
 
 ---
 
